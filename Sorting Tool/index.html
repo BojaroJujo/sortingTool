@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sorting Tool</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div id="container" class="flexColumn">
+      <div id="sortInfo" class="flexColumn">
+        <h1>Sorting Tool</h1>
+        <label for="sortMethod">Choose a method: </label>
+        <select id="sortMethod" name="sortMethod">
+          <option value="bubble">Bubble</option>
+          <option value="bogo">Bogo</option>
+          <option value="selection">Selection</option>
+        </select>
+      </div>
+      <div id="barContainer">
+        
+      </div>
+      <div id="sortValues" class="flexColumn">
+        <p id="numberSteps"></p>
+      </div>
+      <div id="userInput" class="flexRow">
+        <label class="inputLabel">Array Length: </label>
+        <input id="arrayLength" oninput="resizeInput(this)" type="number" value="6" min="1">
+        <button onclick="sortMethod()">SORT</button>
+        <button onclick="randArray()">Randomise Array</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
